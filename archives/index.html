@@ -2,24 +2,26 @@
 
 
 
-
-
-
-
-
-
-
-
-
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -34,69 +36,50 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
-
-<link rel="stylesheet" href="/css/main.css?v=7.1.0"/>
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '7.1.0',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
-    back2top: true,
-    back2top_sidebar: false,
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
 
 
   
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <meta name="description" content="布谷加速器是一款快速稳定科学上网工具,提供美国线路,日本线路,香港线路加速,支持PC、安卓、苹果设备。">
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="布谷加速器是一款快速稳定科学上网工具,提供美国线路,日本线路,香港线路加速,支持PC、安卓、苹果设备。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="布谷加速器">
 <meta property="og:url" content="http://yoursite.com/archives/index.html">
@@ -108,21 +91,39 @@
 
 
 
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
 
 
-  
-  
+
   <link rel="canonical" href="http://yoursite.com/archives/"/>
 
 
 
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
 
-  <title>Archiv | 布谷加速器</title>
+
+  <title>归档 | 布谷加速器</title>
   
 
 
@@ -131,35 +132,6 @@
 
 
 
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
 
 </head>
 
@@ -175,26 +147,23 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
+  <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
+      <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">布谷加速器</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-    
       
         <p class="site-subtitle">www.buguacc.com</p>
       
-    
-    
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -202,52 +171,55 @@
   </div>
 </div>
 
-
-
 <nav class="site-nav">
+  
+
   
     <ul id="menu" class="menu">
       
         
-        
-        
-          
-          <li class="menu-item menu-item-home">
-
-    
-    
-    
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
       
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Startseite</a>
-
-  </li>
         
-        
-        
-          
-          <li class="menu-item menu-item-archives menu-item-active">
-
-    
-    
-    
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
       
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archiv</a>
-
-  </li>
-
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
       
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
       
     </ul>
-  
-
   
 
   
@@ -255,36 +227,12 @@
 
 
 
-  
-
-
-
-</div>
+ </div>
     </header>
-
-    
-
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-            
-
-    
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
-          
           <div id="content" class="content">
             
 
@@ -295,16 +243,14 @@
     <div id="posts" class="posts-collapse">
       <span class="archive-move-on"></span>
 
-      
       <span class="archive-page-counter">
         
         
         
           
         
-        Öhm..! Insgesamt 4 Artikel. Bleib dran.
+        嗯..! 目前共计 4 篇日志。 继续努力。
       </span>
-      
 
       
 
@@ -327,18 +273,18 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/android-cisco/" itemprop="url">
-            
-              <span itemprop="name">布谷加速器安卓设备设置Cisco anyconnect进行VPN连接上网教程</span>
-            
-          </a>
+            <a class="post-title-link" href="/android-cisco/" itemprop="url">
+              
+                <span itemprop="name">布谷加速器安卓设备设置Cisco anyconnect进行VPN连接上网教程</span>
+              
+            </a>
         
       </h2>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
               datetime="2019-05-19T20:23:05+08:00"
-              content="2019-05-19">
+              content="2019-05-19" >
           05-19
         </time>
       </div>
@@ -364,18 +310,18 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/ios-ikev2/" itemprop="url">
-            
-              <span itemprop="name">布谷加速器iPhone/iPad设置iKev2进行VPN连接上网教程</span>
-            
-          </a>
+            <a class="post-title-link" href="/ios-ikev2/" itemprop="url">
+              
+                <span itemprop="name">布谷加速器iPhone/iPad设置iKev2进行VPN连接上网教程</span>
+              
+            </a>
         
       </h2>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
               datetime="2019-05-19T20:23:05+08:00"
-              content="2019-05-19">
+              content="2019-05-19" >
           05-19
         </time>
       </div>
@@ -401,18 +347,18 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/ios-cisco/" itemprop="url">
-            
-              <span itemprop="name">布谷加速器iPhone/iPad设置Cisco anyconnect进行VPN连接上网教程</span>
-            
-          </a>
+            <a class="post-title-link" href="/ios-cisco/" itemprop="url">
+              
+                <span itemprop="name">布谷加速器iPhone/iPad设置Cisco anyconnect进行VPN连接上网教程</span>
+              
+            </a>
         
       </h2>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
               datetime="2019-05-19T20:23:05+08:00"
-              content="2019-05-19">
+              content="2019-05-19" >
           05-19
         </time>
       </div>
@@ -443,18 +389,18 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/hello-world/" itemprop="url">
-            
-              <span itemprop="name">苹果手机使用Cisco Anyconnect上instagram</span>
-            
-          </a>
+            <a class="post-title-link" href="/hello-world/" itemprop="url">
+              
+                <span itemprop="name">苹果手机使用Cisco Anyconnect上instagram</span>
+              
+            </a>
         
       </h2>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
               datetime="2017-03-23T23:00:34+08:00"
-              content="2017-03-23">
+              content="2017-03-23" >
           03-23
         </time>
       </div>
@@ -479,6 +425,9 @@
           </div>
           
 
+
+          
+
         </div>
         
           
@@ -492,79 +441,63 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">布谷加速器</p>
-              <div class="site-description motion-element" itemprop="description">布谷加速器是一款快速稳定科学上网工具,提供美国线路,日本线路,香港线路加速,支持PC、安卓、苹果设备。</div>
+              <p class="site-description motion-element" itemprop="description">布谷加速器是一款快速稳定科学上网工具,提供美国线路,日本线路,香港线路加速,支持PC、安卓、苹果设备。</p>
           </div>
 
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">Artikel</span>
-                  </a>
-                </div>
-              
+          <nav class="site-state motion-element">
 
+            
+              <div class="site-state-item site-state-posts">
               
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">Kategorien</span>
-                  
-                </div>
+                <a href="/archives/">
               
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
 
+            
               
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">schlagwörter</span>
-                  
-                </div>
               
-            </nav>
-          
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
 
           
 
           
 
           
-
           
 
           
@@ -572,44 +505,28 @@
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                软件下载
+                Links
               </div>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://d.freemtproto.tk/instagram.apk" title="https://d.freemtproto.tk/instagram.apk" rel="noopener" target="_blank">Instagram安卓版下载</a>
+                    <a href="https://www.nfjsq.com" title="网飞加速器官网" target="_blank">网飞加速器官网</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://d.xiazai123.xyz/buguacc.apk" title="https://d.xiazai123.xyz/buguacc.apk" rel="noopener" target="_blank">布谷加速器安卓版下载</a>
+                    <a href="https://duan.cf/001" title="网飞加速器备用" target="_blank">网飞加速器备用</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://d.xiazai123.xyz/buguacc.exe" title="https://d.xiazai123.xyz/buguacc.exe" rel="noopener" target="_blank">布谷加速器电脑版下载</a>
+                    <a href="https://duan.cf/soft" title="各类软件安装包" target="_blank">各类软件安装包</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://d.freemtproto.tk/youtube.apk" title="https://d.freemtproto.tk/youtube.apk" rel="noopener" target="_blank">Youtube安卓版下载</a>
+                    <a href="https://duan.cf/kefu" title="在线咨询(PC)" target="_blank">在线咨询(PC)</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://d.freemtproto.tk/whatsapp.apk" title="https://d.freemtproto.tk/whatsapp.apk" rel="noopener" target="_blank">WhatsApp安卓版下载</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://d.freemtproto.tk/telegram.apk" title="https://d.freemtproto.tk/telegram.apk" rel="noopener" target="_blank">Telegram安卓版下载</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://d.freemtproto.tk/line.apk" title="https://d.freemtproto.tk/line.apk" rel="noopener" target="_blank">Line安卓版下载</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://d.freemtproto.tk/pinterest.apk" title="https://d.freemtproto.tk/pinterest.apk" rel="noopener" target="_blank">Pinterest安卓版下载</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://d.freemtproto.tk/" title="https://d.freemtproto.tk/" rel="noopener" target="_blank">更多软件安卓版下载</a>
+                    <a href="https://duan.cf/kefum" title="在线咨询(移动)" target="_blank">在线咨询(移动)</a>
                   </li>
                 
               </ul>
@@ -617,12 +534,9 @@
           
 
           
-            
-          
-          
 
         </div>
-      </div>
+      </section>
 
       
 
@@ -630,7 +544,6 @@
 
     </div>
   </aside>
-  
 
 
         
@@ -640,18 +553,16 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
+  <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">布谷加速器</span>
 
   
-
-  
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.2.0</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -659,13 +570,12 @@
 
 
 
-  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.1.0</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
 
         
-
 
 
 
@@ -686,14 +596,11 @@
 
     
 
-    
-
-    
   </div>
 
   
 
-<script>
+<script type="text/javascript">
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -707,11 +614,7 @@
 
 
 
-
-
-
-
-
+  
 
 
 
@@ -725,54 +628,52 @@
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/utils.js?v=7.1.0"></script>
-
-  <script src="/js/motion.js?v=7.1.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/affix.js?v=7.1.0"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
-
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script src="/js/next-boot.js?v=7.1.0"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
 
 
   
 
-  
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
 
   
-
   
 
 
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
 
-  
-
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
 
 
 
@@ -780,7 +681,49 @@
 
   
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
   
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
   
 
@@ -789,13 +732,6 @@
   
 
   
-
-  
-
-  
-
-  
-
   
 
   
